@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 
 app = Flask(__name__)
 
+@app.route('/')
 @app.route('/me', methods=['GET'])
 def me():
     """Get a dynamic cat fact from external API with profile information
